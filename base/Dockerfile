@@ -54,7 +54,6 @@ RUN set -ex; \
   echo 'libmysqlclient-dev'; \
   fi \
   ) \
-  ; \
   ######## Docker community block end ########
   ######## Begin Tools in Ubuntu Standard ########
   gawk \
