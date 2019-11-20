@@ -89,7 +89,6 @@ RUN set -ex; \
   automake \
   autotools-dev \
   gnupg \
-  inetutils-ping \
   make-doc \
   lsb-base \
   time \
