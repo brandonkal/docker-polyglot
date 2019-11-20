@@ -57,7 +57,6 @@ RUN set -ex; \
   ######## Docker community block end ########
   ######## Begin Tools in Ubuntu Standard ########
   gawk \
-  check bash version \
   debianutils \
   bash \
   bsdutils \
@@ -75,7 +74,6 @@ RUN set -ex; \
   libpam-modules-bin \
   ncurses-bin \
   sed \
-  more \
   less \
   apt \
   man-db \
