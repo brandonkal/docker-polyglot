@@ -105,8 +105,6 @@ RUN set -ex; \
   gettext \
   info \
   iproute2 \
-  iputils-ping \
-  iputils-tracepath \
   irqbalance \
   kmod \
   lshw \
@@ -123,8 +121,6 @@ RUN set -ex; \
   vim \
   neovim \
   wget \
-  # Modified from inetutils-ping
-  ipututils-ping \
   sudo \
   htop \
   man \
