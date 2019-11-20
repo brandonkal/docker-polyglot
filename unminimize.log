@@ -1,0 +1,1521 @@
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+This script restores content and packages that are found on a default
+Ubuntu server system in order to make this system more suitable for
+interactive use.
+
+Reinstallation of packages may fail due to changes to the system
+configuration, the presence of third-party packages, or for other
+reasons.
+
+This operation may take some time.
+
+Would you like to continue? [y/N]
+Re-enabling installation of all documentation in dpkg...
+Updating package list and upgrading packages...
+Fetched 17.3 MB in 5s
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages will be upgraded:
+  openssl
+1 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 613 kB of archives.
+After this operation, 1,024 B disk space will be freed.
+Do you want to continue? [Y/n]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 613 kB in 1s
+
+openssl
+Setting up openssl
+Processing triggers for man-db
+Restoring system documentation...
+Reinstalling packages with files in /usr/share/man/ ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 144 reinstalled, 0 to remove and 0 not upgraded.
+Need to get 74.4 MB of archives.
+After this operation, 0 B of additional disk space will be used.
+
+
+
+
+
+
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 74.4 MB in 58s
+
+mawk
+Setting up mawk
+
+base-files
+Setting up base-files
+
+bash
+
+debianutils
+Setting up debianutils
+Setting up bash
+update-alternatives: using /usr/share/man/man7/bash-builtins.7.gz to provide /usr/share/man/man7/builtins.7.gz (builtins.7.gz) in auto mode
+
+bsdmainutils
+
+bsdutils
+Setting up bsdutils
+
+coreutils
+Setting up coreutils
+
+dash
+
+dpkg
+
+tar
+Setting up tar
+update-alternatives: warning: forcing reinstallation of alternative /usr/sbin/rmt-tar because link group rmt is broken
+Setting up dpkg
+Setting up dash
+Removing 'diversion of /bin/sh to /bin/sh.distrib by bash'
+Adding 'diversion of /bin/sh to /bin/sh.distrib by dash'
+Removing 'diversion of /usr/share/man/man1/sh.1.gz to /usr/share/man/man1/sh.distrib.1.gz by bash'
+Adding 'diversion of /usr/share/man/man1/sh.1.gz to /usr/share/man/man1/sh.distrib.1.gz by dash'
+
+diffutils
+Setting up diffutils
+
+e2fsprogs
+Setting up e2fsprogs
+
+findutils
+Setting up findutils
+
+libpcre3:amd64
+Setting up libpcre3:amd64
+
+grep
+Setting up grep
+
+gzip
+Setting up gzip
+
+hostname
+Setting up hostname
+
+libpam-runtime
+
+perl-base
+Setting up perl-base
+
+debconf
+Setting up debconf
+
+libpam-modules-bin
+Setting up libpam-modules-bin
+
+libpam-modules:amd64
+Setting up libpam-modules:amd64
+Setting up libpam-runtime
+
+login
+Setting up login
+
+ncurses-bin
+Setting up ncurses-bin
+
+sed
+Setting up sed
+
+fdisk
+Setting up fdisk
+
+util-linux
+Setting up util-linux
+update-alternatives: warning: forcing reinstallation of alternative /bin/more because link group pager is broken
+
+base-passwd
+Setting up base-passwd
+
+init-system-helpers
+Setting up init-system-helpers
+
+locales
+
+libc-bin
+Setting up libc-bin
+
+sysvinit-utils
+Setting up sysvinit-utils
+
+apt
+
+adduser
+
+passwd
+Setting up passwd
+Setting up adduser
+
+gpgv
+Setting up gpgv
+Setting up apt
+
+mount
+
+python3.6-minimal
+Setting up python3.6-minimal
+
+python3-minimal
+Setting up python3-minimal
+
+python3
+
+man-db
+
+fontconfig
+
+perl
+
+libaudit-common
+Setting up libaudit-common
+
+libsemanage-common
+Setting up libsemanage-common
+
+procps
+
+sensible-utils
+
+bzip2
+
+ca-certificates
+
+file
+
+libmagic1:amd64
+
+mime-support
+
+openssl
+
+python3.6
+
+readline-common
+
+shared-mime-info
+
+sudo
+
+ucf
+
+xxd
+
+vim-common
+
+xz-utils
+
+groff-base
+
+libx11-data
+
+lsof
+
+openssh-client
+
+wget
+
+autoconf
+
+automake
+
+autotools-dev
+
+binutils-x86-64-linux-gnu
+
+binutils-common:amd64
+
+binutils
+
+cpp
+
+cpp-7
+
+curl
+
+dirmngr
+
+dpkg-dev
+
+fontconfig-config
+
+g++
+
+g++-7
+
+gcc
+
+gcc-7
+
+git-man
+
+gnupg-utils
+
+gpg
+
+gpgconf
+
+gpg-agent
+
+gpg-wks-client
+
+gpg-wks-server
+
+gpgsm
+
+htop
+
+icu-devtools
+
+imagemagick-6.q16
+
+inetutils-ping
+
+krb5-multidev:amd64
+
+libc-dev-bin
+
+libcurl4-openssl-dev:amd64
+
+libdpkg-perl
+
+liberror-perl
+
+libfontconfig1-dev:amd64
+
+libfreetype6-dev:amd64
+
+libgdbm-dev:amd64
+
+libgdk-pixbuf2.0-dev
+
+libglib2.0-dev-bin
+
+libglib2.0-bin
+
+libldap-common
+
+libmaxminddb-dev:amd64
+
+libmaxminddb0:amd64
+
+libmysqlclient-dev
+
+libncurses5-dev:amd64
+
+libncursesw5-dev:amd64
+
+libpcre3-dev:amd64
+
+libperl5.26:amd64
+
+libpng-dev:amd64
+
+libpq-dev
+
+libtiff5-dev:amd64
+
+libtool
+
+libxau-dev:amd64
+
+libxext-dev:amd64
+
+libxft-dev
+
+libxml2-dev:amd64
+
+libxslt1-dev:amd64
+
+libxss-dev:amd64
+
+libxt-dev:amd64
+
+m4
+
+make
+
+net-tools
+
+patch
+
+pinentry-curses
+
+pkg-config
+
+tcl
+
+tcl-dev:amd64
+
+tcl8.6
+
+tk
+
+tk8.6
+
+unzip
+
+vim-runtime
+
+x11-common
+
+zlib1g-dev:amd64
+
+comerr-dev:amd64
+
+libffi-dev:amd64
+
+libkrb5-dev:amd64
+
+neovim-runtime
+
+uuid-dev:amd64
+Setting up readline-common
+Setting up git-man
+Setting up libxt-dev:amd64
+Setting up libpcre3-dev:amd64
+Setting up make
+Setting up inetutils-ping
+Setting up tk8.6
+Setting up libpq-dev
+Setting up comerr-dev:amd64
+Setting up mime-support
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/vim.basic because link group view is broken
+Setting up xxd
+Setting up sudo
+Setting up curl
+Setting up libgdbm-dev:amd64
+Setting up libldap-common
+Setting up neovim-runtime
+Setting up lsof
+Setting up gpgconf
+Setting up groff-base
+Setting up unzip
+Setting up mount
+Setting up uuid-dev:amd64
+Setting up libffi-dev:amd64
+Setting up libxau-dev:amd64
+Setting up imagemagick-6.q16
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/compare-im6.q16 because link group compare is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/compare-im6.q16 because link group compare-im6 is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/animate-im6.q16 because link group animate is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/animate-im6.q16 because link group animate-im6 is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/convert-im6.q16 because link group convert is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/convert-im6.q16 because link group convert-im6 is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/composite-im6.q16 because link group composite is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/composite-im6.q16 because link group composite-im6 is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/conjure-im6.q16 because link group conjure is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/conjure-im6.q16 because link group conjure-im6 is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/import-im6.q16 because link group import is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/import-im6.q16 because link group import-im6 is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/identify-im6.q16 because link group identify is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/identify-im6.q16 because link group identify-im6 is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/stream-im6.q16 because link group stream is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/stream-im6.q16 because link group stream-im6 is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/display-im6.q16 because link group display is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/display-im6.q16 because link group display-im6 is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/montage-im6.q16 because link group montage is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/montage-im6.q16 because link group montage-im6 is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/mogrify-im6.q16 because link group mogrify is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/mogrify-im6.q16 because link group mogrify-im6 is broken
+Setting up m4
+Setting up cpp-7
+Setting up bzip2
+Setting up libmagic1:amd64
+Setting up libxml2-dev:amd64
+Setting up procps
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/w.procps because link group w is broken
+Setting up libncurses5-dev:amd64
+Setting up binutils-common:amd64
+Setting up sensible-utils
+Setting up patch
+Setting up krb5-multidev:amd64
+Setting up libperl5.26:amd64
+Setting up autotools-dev
+Setting up libncursesw5-dev:amd64
+Setting up xz-utils
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/xz because link group lzma is broken
+Setting up libxext-dev:amd64
+Setting up gpgsm
+Setting up tcl8.6
+Setting up openssl
+Setting up wget
+Setting up gnupg-utils
+Setting up vim-common
+Setting up shared-mime-info
+Setting up pinentry-curses
+Setting up vim-runtime
+Setting up icu-devtools
+Setting up libc-dev-bin
+Setting up htop
+Setting up bsdmainutils
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/bsd-write because link group write is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/bsd-from because link group from is broken
+Setting up net-tools
+Setting up x11-common
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of restart.
+Setting up ca-certificates
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Setting up openssh-client
+Setting up dirmngr
+Setting up libglib2.0-bin
+Setting up locales
+Generating locales (this might take a while)...
+  en_US.UTF-8... done
+Generation complete.
+Setting up libcurl4-openssl-dev:amd64
+Setting up libx11-data
+Setting up libmaxminddb0:amd64
+Setting up gpg
+Setting up libxslt1-dev:amd64
+Setting up zlib1g-dev:amd64
+Setting up binutils-x86-64-linux-gnu
+Setting up cpp
+Setting up python3.6
+Setting up libmysqlclient-dev
+Setting up python3
+Setting up libglib2.0-dev-bin
+Setting up libmaxminddb-dev:amd64
+Setting up libkrb5-dev:amd64
+Setting up libtiff5-dev:amd64
+Setting up gpg-agent
+Setting up tcl
+Setting up gpg-wks-server
+Setting up gpg-wks-client
+Setting up file
+Setting up libxss-dev:amd64
+Setting up ucf
+Setting up perl
+Setting up tk
+Setting up man-db
+Updating database of manual pages ...
+Setting up binutils
+Setting up libpng-dev:amd64
+Setting up tcl-dev:amd64
+Setting up fontconfig-config
+Setting up gcc-7
+Setting up liberror-perl
+Setting up g++-7
+Setting up libdpkg-perl
+Setting up autoconf
+Setting up gcc
+Setting up libgdk-pixbuf2.0-dev
+Setting up dpkg-dev
+Setting up libfreetype6-dev:amd64
+Setting up automake
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/automake-1.15 because link group automake is broken
+Setting up g++
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/g++ because link group c++ is broken
+Setting up fontconfig
+Regenerating fonts cache... done.
+Setting up libtool
+Setting up pkg-config
+Setting up libfontconfig1-dev:amd64
+Setting up libxft-dev
+Processing triggers for hicolor-icon-theme
+Processing triggers for libc-bin
+Processing triggers for ca-certificates
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+Reinstalling packages with system documentation in /usr/share/doc/ ..
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 98 reinstalled, 0 to remove and 0 not upgraded.
+Need to get 63.9 MB of archives.
+After this operation, 0 B of additional disk space will be used.
+
+
+
+
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 63.9 MB in 41s
+
+liblzo2-2:amd64
+
+libmagickcore-6-arch-config:amd64
+
+imagemagick-6-common
+
+libmagickcore-6.q16-3:amd64
+
+perl-modules-5.26
+
+gcc-8-base:amd64
+Setting up gcc-8-base:amd64
+
+libc6:amd64
+Setting up libc6:amd64
+
+libdb5.3:amd64
+Setting up libdb5.3:amd64
+
+libdebconfclient0:amd64
+Setting up libdebconfclient0:amd64
+
+libgcrypt20:amd64
+
+libgpg-error0:amd64
+Setting up libgpg-error0:amd64
+Setting up libgcrypt20:amd64
+
+liblzma5:amd64
+Setting up liblzma5:amd64
+
+libpam0g:amd64
+Setting up libpam0g:amd64
+
+libtinfo5:amd64
+Setting up libtinfo5:amd64
+
+libapt-pkg5.0:amd64
+Setting up libapt-pkg5.0:amd64
+
+libgmp10:amd64
+Setting up libgmp10:amd64
+
+libgnutls30:amd64
+
+libidn2-0:amd64
+Setting up libidn2-0:amd64
+
+libnettle6:amd64
+Setting up libnettle6:amd64
+
+libp11-kit0:amd64
+Setting up libp11-kit0:amd64
+
+libtasn1-6:amd64
+Setting up libtasn1-6:amd64
+Setting up libgnutls30:amd64
+
+ubuntu-keyring
+Setting up ubuntu-keyring
+
+libprocps6:amd64
+
+lsb-base
+
+libexpat1:amd64
+
+libglib2.0-0:amd64
+
+libmagic-mgc
+
+libpython3-stdlib:amd64
+
+libpython3.6-minimal:amd64
+
+libreadline7:amd64
+
+libsqlite3-0:amd64
+
+libssl1.1:amd64
+
+libxml2:amd64
+
+netbase
+
+tzdata
+
+libedit2:amd64
+
+libkrb5-3:amd64
+
+libkrb5support0:amd64
+
+libpng16-16:amd64
+
+libssl1.0.0:amd64
+
+libx11-6:amd64
+
+default-libmysqlclient-dev:amd64
+
+fonts-dejavu-core
+
+g++-7
+
+gcc-7
+
+gcc-7-base:amd64
+
+git
+
+gnupg-l10n
+
+gnupg
+
+hicolor-icon-theme
+
+libcairo2:amd64
+
+libcroco3:amd64
+
+libcurl3-gnutls:amd64
+
+libcurl4:amd64
+
+libdatrie1:amd64
+
+libdjvulibre-dev:amd64
+
+libevent-dev
+
+libexif12:amd64
+
+libexpat1-dev:amd64
+
+libfftw3-double3:amd64
+
+libfontconfig1:amd64
+
+libfreetype6:amd64
+
+libfreetype6-dev:amd64
+
+libgdk-pixbuf2.0-0:amd64
+
+libglib2.0-dev:amd64
+
+libgmp-dev:amd64
+
+libharfbuzz0b:amd64
+
+libilmbase12:amd64
+
+libjpeg-turbo8-dev:amd64
+
+libksba8:amd64
+
+liblcms2-dev:amd64
+
+libldap-2.4-2:amd64
+
+liblqr-1-0-dev:amd64
+
+libltdl7:amd64
+
+libmpfr6:amd64
+
+libmysqlclient20:amd64
+
+libnghttp2-14:amd64
+
+libpango-1.0-0:amd64
+
+libpthread-stubs0-dev:amd64
+
+librsvg2-2:amd64
+
+libsasl2-2:amd64
+
+libsasl2-modules-db:amd64
+
+libsigsegv2:amd64
+
+libstdc++-7-dev:amd64
+
+libwmf0.2-7:amd64
+
+libxdmcp-dev:amd64
+
+libxrender-dev:amd64
+
+libxslt1.1:amd64
+
+mysql-common
+
+python3-distutils
+
+tcl8.6-dev:amd64
+
+vim
+
+x11proto-dev
+
+xtrans-dev
+
+libdb-dev:amd64
+
+libjemalloc1
+
+liblzma-dev:amd64
+
+libwebp-dev:amd64
+Setting up libedit2:amd64
+Setting up libgmp-dev:amd64
+Setting up libpython3-stdlib:amd64
+Setting up imagemagick-6-common
+Setting up libexpat1:amd64
+Setting up libssl1.0.0:amd64
+Setting up liblqr-1-0-dev:amd64
+Setting up libnghttp2-14:amd64
+Setting up liblcms2-dev:amd64
+Setting up libjemalloc1
+Setting up libpng16-16:amd64
+Setting up libsigsegv2:amd64
+Setting up libpthread-stubs0-dev:amd64
+Setting up vim
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/vim.basic because link group vi is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/vim.basic because link group ex is broken
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/vim.basic because link group editor is broken
+Setting up fonts-dejavu-core
+Setting up libreadline7:amd64
+Setting up libdjvulibre-dev:amd64
+Setting up tzdata
+
+Current default time zone: 'Etc/UTC'
+Local time is now:      Wed Nov 20 06:26:20 UTC 2019.
+Universal Time is now:  Wed Nov 20 06:26:20 UTC 2019.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+Setting up libglib2.0-0:amd64
+No schema files found: doing nothing.
+Setting up mysql-common
+Setting up libsasl2-modules-db:amd64
+Setting up libmagickcore-6-arch-config:amd64
+Setting up libmpfr6:amd64
+Setting up libx11-6:amd64
+Setting up libsasl2-2:amd64
+Setting up libdatrie1:amd64
+Setting up libksba8:amd64
+Setting up perl-modules-5.26
+Setting up libfftw3-double3:amd64
+Setting up libkrb5support0:amd64
+Setting up libprocps6:amd64
+Setting up libglib2.0-dev:amd64
+Setting up libxml2:amd64
+Setting up x11proto-dev
+Setting up libfreetype6:amd64
+Setting up libmagic-mgc
+Setting up gnupg-l10n
+Setting up libwebp-dev:amd64
+Setting up lsb-base
+Setting up libcroco3:amd64
+Setting up libxslt1.1:amd64
+Setting up gcc-7-base:amd64
+Setting up libilmbase12:amd64
+Setting up xtrans-dev
+Setting up libjpeg-turbo8-dev:amd64
+Setting up libevent-dev
+Setting up libxdmcp-dev:amd64
+Setting up libfreetype6-dev:amd64
+Setting up libldap-2.4-2:amd64
+Setting up libssl1.1:amd64
+Setting up libpango-1.0-0:amd64
+Setting up libltdl7:amd64
+Setting up libsqlite3-0:amd64
+Setting up libexpat1-dev:amd64
+Setting up libkrb5-3:amd64
+Setting up libmysqlclient20:amd64
+Setting up default-libmysqlclient-dev:amd64
+Setting up liblzma-dev:amd64
+Setting up hicolor-icon-theme
+Setting up libexif12:amd64
+Setting up libwmf0.2-7:amd64
+Setting up python3-distutils
+Setting up tcl8.6-dev:amd64
+Setting up liblzo2-2:amd64
+Setting up netbase
+Setting up libdb-dev:amd64
+Setting up libfontconfig1:amd64
+Setting up libmagickcore-6.q16-3:amd64
+Setting up gcc-7
+Setting up libcurl3-gnutls:amd64
+Setting up libgdk-pixbuf2.0-0:amd64
+Setting up libcurl4:amd64
+Setting up gnupg
+Setting up libxrender-dev:amd64
+Setting up libharfbuzz0b:amd64
+Setting up libstdc++-7-dev:amd64
+Setting up libpython3.6-minimal:amd64
+Setting up git
+Setting up libcairo2:amd64
+Setting up librsvg2-2:amd64
+Setting up g++-7
+Processing triggers for man-db
+Processing triggers for fontconfig
+Processing triggers for libc-bin
+Restoring system translations...
+dpkg-query: error: --search needs at least one file name pattern argument
+
+Use --help for help about querying packages.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Documentation has been restored successfully.
+Installing ubuntu-minimal package to provide the familiar Ubuntu minimal system...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  accountsservice apparmor apt-utils bash-completion bind9-host
+  busybox-initramfs busybox-static command-not-found command-not-found-data
+  console-setup console-setup-linux cpio cron dbus debconf-i18n
+  distro-info-data dmidecode dmsetup dnsutils dosfstools ed eject
+  friendly-recovery ftp fuse geoip-database gettext-base hdparm info init
+  initramfs-tools initramfs-tools-bin initramfs-tools-core install-info
+  iproute2 iptables iputils-ping iputils-tracepath irqbalance isc-dhcp-client
+  isc-dhcp-common iso-codes kbd keyboard-configuration klibc-utils kmod
+  language-selector-common less libaccountsservice0 libapparmor1
+  libapt-inst2.0 libargon2-0 libatm1 libbind9-160 libcap2 libcap2-bin
+  libcryptsetup12 libdbus-1-3 libdevmapper1.02.1 libdns-export1100 libdns1100
+  libdrm-common libdrm2 libestr0 libfastjson4 libfribidi0 libfuse2 libgeoip1
+  libidn11 libip4tc0 libip6tc0 libiptc0 libirs160 libisc-export169 libisc169
+  libisccc160 libisccfg160 libjson-c3 libklibc libkmod2 liblocale-gettext-perl
+  liblwres160 libmnl0 libnetfilter-conntrack3 libnewt0.52 libnfnetlink0
+  libnih1 libnss-systemd libntfs-3g88 libnuma1 libpam-cap libpam-systemd
+  libparted2 libpcap0.8 libpci3 libplymouth4 libpolkit-gobject-1-0 libpopt0
+  libslang2 libtext-charwidth-perl libtext-iconv-perl libtext-wrapi18n-perl
+  libunwind8 libusb-1.0-0 libxtables12 linux-base logrotate lsb-release lshw
+  ltrace manpages mlocate mtr-tiny nano netcat-openbsd netplan.io
+  networkd-dispatcher nplan ntfs-3g parted pciutils plymouth
+  plymouth-theme-ubuntu-text popularity-contest powermgmt-base psmisc
+  python-apt-common python3-apt python3-commandnotfound python3-dbus
+  python3-distro-info python3-distupgrade python3-gdbm python3-gi
+  python3-netifaces python3-update-manager python3-yaml rsync rsyslog strace
+  systemd systemd-sysv tcpdump telnet time ubuntu-advantage-tools
+  ubuntu-release-upgrader-core udev ufw update-manager-core ureadahead
+  usbutils uuid-runtime vim-tiny whiptail xkb-data
+Suggested packages:
+  gnome-control-center apparmor-profiles-extra apparmor-utils snapd
+  libarchive1 anacron checksecurity exim4 | postfix | mail-transport-agent
+  default-dbus-session-bus | dbus-session-bus rblcheck cdtool setcd apmd
+  texinfo-doc-nonfree iproute2-doc traceroute resolvconf avahi-autoipd
+  isc-dhcp-client-ddns isoquery geoip-bin libparted-dev libparted-i18n
+  bsd-mailx | mailx lsb spell network-manager | wpasupplicant iw
+  | wireless-tools parted-doc desktop-base plymouth-themes python3-apt-dbg
+  python-apt-doc python-dbus-doc python3-dbus-dbg python3-gdbm-dbg
+  python3-launchpadlib openssh-server rsyslog-mysql | rsyslog-pgsql
+  rsyslog-doc rsyslog-gnutls rsyslog-gssapi rsyslog-relp systemd-container
+  policykit-1 indent
+The following packages will be REMOVED:
+  inetutils-ping
+The following NEW packages will be installed:
+  accountsservice apparmor apt-utils bash-completion bind9-host
+  busybox-initramfs busybox-static command-not-found command-not-found-data
+  console-setup console-setup-linux cpio cron dbus debconf-i18n
+  distro-info-data dmidecode dmsetup dnsutils dosfstools ed eject
+  friendly-recovery ftp fuse geoip-database gettext-base hdparm info init
+  initramfs-tools initramfs-tools-bin initramfs-tools-core install-info
+  iproute2 iptables iputils-ping iputils-tracepath irqbalance isc-dhcp-client
+  isc-dhcp-common iso-codes kbd keyboard-configuration klibc-utils kmod
+  language-selector-common less libaccountsservice0 libapparmor1
+  libapt-inst2.0 libargon2-0 libatm1 libbind9-160 libcap2 libcap2-bin
+  libcryptsetup12 libdbus-1-3 libdevmapper1.02.1 libdns-export1100 libdns1100
+  libdrm-common libdrm2 libestr0 libfastjson4 libfribidi0 libfuse2 libgeoip1
+  libidn11 libip4tc0 libip6tc0 libiptc0 libirs160 libisc-export169 libisc169
+  libisccc160 libisccfg160 libjson-c3 libklibc libkmod2 liblocale-gettext-perl
+  liblwres160 libmnl0 libnetfilter-conntrack3 libnewt0.52 libnfnetlink0
+  libnih1 libnss-systemd libntfs-3g88 libnuma1 libpam-cap libpam-systemd
+  libparted2 libpcap0.8 libpci3 libplymouth4 libpolkit-gobject-1-0 libpopt0
+  libslang2 libtext-charwidth-perl libtext-iconv-perl libtext-wrapi18n-perl
+  libunwind8 libusb-1.0-0 libxtables12 linux-base logrotate lsb-release lshw
+  ltrace manpages mlocate mtr-tiny nano netcat-openbsd netplan.io
+  networkd-dispatcher nplan ntfs-3g parted pciutils plymouth
+  plymouth-theme-ubuntu-text popularity-contest powermgmt-base psmisc
+  python-apt-common python3-apt python3-commandnotfound python3-dbus
+  python3-distro-info python3-distupgrade python3-gdbm python3-gi
+  python3-netifaces python3-update-manager python3-yaml rsync rsyslog strace
+  systemd systemd-sysv tcpdump telnet time ubuntu-advantage-tools
+  ubuntu-minimal ubuntu-release-upgrader-core ubuntu-standard udev ufw
+  update-manager-core ureadahead usbutils uuid-runtime vim-tiny whiptail
+  xkb-data
+0 upgraded, 158 newly installed, 1 to remove and 0 not upgraded.
+Need to get 28.3 MB of archives.
+After this operation, 119 MB of additional disk space will be used.
+
+
+
+
+
+
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 28.3 MB in 53s
+Removing inetutils-ping
+
+install-info
+Setting up install-info
+
+kbd
+
+liblocale-gettext-perl
+
+keyboard-configuration
+
+console-setup-linux
+
+xkb-data
+
+console-setup
+
+cron
+
+libcap2:amd64
+
+libargon2-0:amd64
+
+libdevmapper1.02.1:amd64
+
+libjson-c3:amd64
+
+libcryptsetup12:amd64
+
+libidn11:amd64
+
+libip4tc0:amd64
+
+libapparmor1:amd64
+
+libkmod2:amd64
+Setting up libcap2:amd64
+Setting up libargon2-0:amd64
+Setting up libdevmapper1.02.1:amd64
+Setting up libjson-c3:amd64
+Setting up libcryptsetup12:amd64
+Setting up libidn11:amd64
+Setting up libip4tc0:amd64
+
+systemd
+Setting up libapparmor1:amd64
+Setting up libkmod2:amd64
+Setting up systemd
+Created symlink /etc/systemd/system/getty.target.wants/getty@tty1.service → /lib/systemd/system/getty@.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/remote-fs.target → /lib/systemd/system/remote-fs.target.
+Created symlink /etc/systemd/system/sysinit.target.wants/systemd-timesyncd.service → /lib/systemd/system/systemd-timesyncd.service.
+Created symlink /etc/systemd/system/dbus-org.freedesktop.resolve1.service → /lib/systemd/system/systemd-resolved.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/systemd-resolved.service → /lib/systemd/system/systemd-resolved.service.
+ln: failed to create symbolic link '/etc/resolv.conf': Device or resource busy
+Created symlink /etc/systemd/system/multi-user.target.wants/ondemand.service → /lib/systemd/system/ondemand.service.
+Initializing machine ID from random generator.
+
+systemd-sysv
+Setting up systemd-sysv
+
+init
+
+iso-codes
+
+libapt-inst2.0:amd64
+
+python-apt-common
+
+python3-apt
+
+libdbus-1-3:amd64
+
+python3-dbus
+
+dbus
+
+libaccountsservice0:amd64
+
+libpolkit-gobject-1-0:amd64
+
+accountsservice
+
+language-selector-common
+
+libnfnetlink0:amd64
+
+libnih1:amd64
+
+libfuse2:amd64
+
+fuse
+
+libntfs-3g88
+Setting up libfuse2:amd64
+Setting up fuse
+
+ntfs-3g
+
+popularity-contest
+
+uuid-runtime
+
+apt-utils
+
+busybox-initramfs
+
+cpio
+
+libtext-iconv-perl
+
+libtext-charwidth-perl
+
+libtext-wrapi18n-perl
+
+debconf-i18n
+
+distro-info-data
+
+dmsetup
+
+eject
+
+initramfs-tools-bin
+
+libklibc
+
+Adding 'diversion of /usr/share/initramfs-tools/hooks/klibc to /usr/share/initramfs-tools/hooks/klibc^i-t by klibc-utils'
+klibc-utils
+
+kmod
+
+udev
+
+initramfs-tools-core
+
+linux-base
+
+initramfs-tools
+
+libmnl0:amd64
+
+iproute2
+
+iputils-ping
+
+libisc-export169:amd64
+
+libdns-export1100
+
+isc-dhcp-client
+
+isc-dhcp-common
+
+less
+
+libatm1:amd64
+
+libcap2-bin
+
+libestr0:amd64
+
+libfastjson4:amd64
+
+libfribidi0:amd64
+
+libslang2:amd64
+
+libnewt0.52:amd64
+
+libnss-systemd:amd64
+
+libpam-cap:amd64
+
+libpam-systemd:amd64
+
+libpopt0:amd64
+
+libxtables12:amd64
+
+logrotate
+
+lsb-release
+
+netcat-openbsd
+
+python3-yaml
+
+python3-netifaces
+
+netplan.io
+
+python3-gi
+
+networkd-dispatcher
+
+nplan
+
+rsyslog
+
+ubuntu-advantage-tools
+
+vim-tiny
+
+whiptail
+
+ubuntu-minimal
+
+apparmor
+
+bash-completion
+
+libisc169:amd64
+
+libgeoip1:amd64
+
+libdns1100:amd64
+
+libisccc160:amd64
+
+libisccfg160:amd64
+
+libbind9-160:amd64
+
+liblwres160:amd64
+
+bind9-host
+
+busybox-static
+
+command-not-found-data
+
+python3-gdbm:amd64
+
+python3-commandnotfound
+
+command-not-found
+
+dmidecode
+
+libirs160:amd64
+
+dnsutils
+
+dosfstools
+
+ed
+
+Failed to disable unit, unit friendly-recovery.service does not exist.
+friendly-recovery
+
+ftp
+
+geoip-database
+
+gettext-base
+
+hdparm
+
+info
+
+libip6tc0:amd64
+
+libiptc0:amd64
+
+libnetfilter-conntrack3:amd64
+
+iptables
+
+iputils-tracepath
+
+libnuma1:amd64
+
+irqbalance
+
+libdrm-common
+
+libdrm2:amd64
+
+libparted2:amd64
+
+libpcap0.8:amd64
+
+libpci3:amd64
+
+libplymouth4:amd64
+
+libusb-1.0-0:amd64
+
+lshw
+
+ltrace
+
+manpages
+
+mlocate
+
+mtr-tiny
+
+nano
+
+parted
+
+pciutils
+
+plymouth
+
+plymouth-theme-ubuntu-text
+
+powermgmt-base
+
+psmisc
+
+python3-distro-info
+
+python3-update-manager
+
+python3-distupgrade
+
+rsync
+
+libunwind8:amd64
+
+strace
+
+tcpdump
+
+telnet
+
+time
+
+ubuntu-release-upgrader-core
+
+usbutils
+
+ubuntu-standard
+
+ufw
+
+update-manager-core
+
+ureadahead
+Setting up python-apt-common
+Setting up iputils-ping
+Setting up ubuntu-advantage-tools
+Setting up vim-tiny
+Setting up python3-yaml
+Setting up libisc169:amd64
+Setting up libapt-inst2.0:amd64
+Setting up manpages
+Setting up libnss-systemd:amd64
+First installation detected...
+Checking NSS setup...
+Setting up cpio
+update-alternatives: using /bin/mt-gnu to provide /bin/mt (mt) in auto mode
+Setting up libpopt0:amd64
+Setting up powermgmt-base
+Setting up kmod
+Setting up libisccc160:amd64
+Setting up libestr0:amd64
+Setting up libparted2:amd64
+Setting up less
+Setting up python3-apt
+Setting up libpam-cap:amd64
+Setting up info
+update-alternatives: using /usr/bin/info to provide /usr/bin/infobrowser (infobrowser) in auto mode
+Setting up dosfstools
+Setting up psmisc
+Setting up time
+Setting up geoip-database
+Setting up iso-codes
+Setting up libfastjson4:amd64
+Setting up ltrace
+Setting up isc-dhcp-common
+Setting up dmidecode
+Setting up apt-utils
+Setting up libcap2-bin
+Setting up libisc-export169:amd64
+Setting up bash-completion
+Setting up libnuma1:amd64
+Setting up init
+Setting up libklibc
+Setting up xkb-data
+Setting up linux-base
+Setting up mlocate
+update-alternatives: using /usr/bin/mlocate to provide /usr/bin/locate (locate) in auto mode
+Adding group `mlocate' (GID 105) ...
+Done.
+Setting up libiptc0:amd64
+Setting up apparmor
+Created symlink /etc/systemd/system/sysinit.target.wants/apparmor.service → /lib/systemd/system/apparmor.service.
+Setting up distro-info-data
+Setting up gettext-base
+Setting up hdparm
+Setting up libgeoip1:amd64
+Setting up python3-gi
+Setting up parted
+Setting up lsb-release
+Setting up ed
+Setting up lshw
+Setting up python3-netifaces
+Setting up uuid-runtime
+Adding group `uuidd' (GID 106) ...
+Done.
+Warning: The home dir /run/uuidd you specified can't be accessed: No such file or directory
+Adding system user `uuidd' (UID 103) ...
+Adding new user `uuidd' (UID 103) with group `uuidd' ...
+Not creating home directory `/run/uuidd'.
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Created symlink /etc/systemd/system/sockets.target.wants/uuidd.socket → /lib/systemd/system/uuidd.socket.
+Setting up libdrm-common
+Setting up netcat-openbsd
+update-alternatives: using /bin/nc.openbsd to provide /bin/nc (nc) in auto mode
+Setting up rsync
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of restart.
+Created symlink /etc/systemd/system/multi-user.target.wants/rsync.service → /lib/systemd/system/rsync.service.
+Setting up libaccountsservice0:amd64
+Setting up busybox-initramfs
+Setting up nano
+update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+Setting up libusb-1.0-0:amd64
+Setting up libunwind8:amd64
+Setting up libatm1:amd64
+Setting up libxtables12:amd64
+Setting up udev
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up iputils-tracepath
+update-alternatives: using /usr/bin/traceroute6.iputils to provide /usr/bin/traceroute6 (traceroute6) in auto mode
+Setting up libtext-iconv-perl
+Setting up telnet
+update-alternatives: using /usr/bin/telnet.netkit to provide /usr/bin/telnet (telnet) in auto mode
+Setting up mtr-tiny
+Setting up libdns-export1100
+Setting up ftp
+update-alternatives: using /usr/bin/netkit-ftp to provide /usr/bin/ftp (ftp) in auto mode
+Setting up libplymouth4:amd64
+Setting up libfribidi0:amd64
+Setting up liblocale-gettext-perl
+Setting up dmsetup
+update-initramfs: deferring update (trigger activated)
+Setting up python3-gdbm:amd64
+Setting up libnfnetlink0:amd64
+Setting up libntfs-3g88
+Setting up libtext-charwidth-perl
+Setting up busybox-static
+Setting up initramfs-tools-bin
+Setting up libpci3:amd64
+Setting up libdns1100:amd64
+Setting up irqbalance
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libslang2:amd64
+Setting up cron
+Adding group `crontab' (GID 108) ...
+Done.
+Created symlink /etc/systemd/system/multi-user.target.wants/cron.service → /lib/systemd/system/cron.service.
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libmnl0:amd64
+Setting up command-not-found-data
+Setting up libnih1:amd64
+Setting up liblwres160:amd64
+Setting up logrotate
+Setting up rsyslog
+
+Creating config file /etc/rsyslog.d/50-default.conf with new version
+Adding user `syslog' to group `adm' ...
+Adding user syslog to group adm
+Done.
+Created symlink /etc/systemd/system/syslog.service → /lib/systemd/system/rsyslog.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/rsyslog.service → /lib/systemd/system/rsyslog.service.
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libpolkit-gobject-1-0:amd64
+Setting up libdbus-1-3:amd64
+Setting up libip6tc0:amd64
+Setting up eject
+Setting up popularity-contest
+Setting up libpcap0.8:amd64
+Setting up strace
+Setting up python3-distro-info
+Setting up keyboard-configuration
+Your console font configuration will be updated the next time your system
+boots. If you want to update it now, run 'setupcon' from a virtual console.
+update-initramfs: deferring update (trigger activated)
+Setting up klibc-utils
+Setting up libnetfilter-conntrack3:amd64
+Setting up python3-dbus
+Setting up ureadahead
+Created symlink /etc/systemd/system/default.target.wants/ureadahead.service → /lib/systemd/system/ureadahead.service.
+Setting up initramfs-tools-core
+Setting up python3-commandnotfound
+Setting up initramfs-tools
+update-initramfs: deferring update (trigger activated)
+Setting up command-not-found
+Setting up usbutils
+Setting up iproute2
+Setting up tcpdump
+Setting up libdrm2:amd64
+Setting up isc-dhcp-client
+Setting up plymouth
+update-initramfs: deferring update (trigger activated)
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+Setting up libisccfg160:amd64
+Setting up iptables
+Setting up libtext-wrapi18n-perl
+Setting up ntfs-3g
+Setting up pciutils
+Setting up dbus
+Setting up libnewt0.52:amd64
+update-alternatives: using /etc/newt/palette.ubuntu to provide /etc/newt/palette (newt-palette) in auto mode
+Setting up networkd-dispatcher
+Created symlink /etc/systemd/system/multi-user.target.wants/networkd-dispatcher.service → /lib/systemd/system/networkd-dispatcher.service.
+Setting up ufw
+
+Creating config file /etc/ufw/before.rules with new version
+
+Creating config file /etc/ufw/before6.rules with new version
+
+Creating config file /etc/ufw/after.rules with new version
+
+Creating config file /etc/ufw/after6.rules with new version
+Created symlink /etc/systemd/system/multi-user.target.wants/ufw.service → /lib/systemd/system/ufw.service.
+Setting up libpam-systemd:amd64
+Setting up debconf-i18n
+Setting up plymouth-theme-ubuntu-text
+update-alternatives: using /usr/share/plymouth/themes/ubuntu-text/ubuntu-text.plymouth to provide /usr/share/plymouth/themes/text.plymouth (text.plymouth) in auto mode
+update-initramfs: deferring update (trigger activated)
+Setting up libirs160:amd64
+Setting up whiptail
+Setting up libbind9-160:amd64
+Setting up netplan.io
+Setting up nplan
+Setting up accountsservice
+Created symlink /etc/systemd/system/graphical.target.wants/accounts-daemon.service → /lib/systemd/system/accounts-daemon.service.
+Setting up friendly-recovery
+Setting up bind9-host
+Setting up language-selector-common
+Setting up dnsutils
+Setting up ubuntu-standard
+Setting up python3-update-manager
+Setting up kbd
+Setting up console-setup-linux
+update-alternatives: using /etc/console-setup/vtrgb to provide /etc/vtrgb (vtrgb) in auto mode
+Created symlink /etc/systemd/system/sysinit.target.wants/keyboard-setup.service → /lib/systemd/system/keyboard-setup.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/console-setup.service → /lib/systemd/system/console-setup.service.
+Created symlink /etc/systemd/system/sysinit.target.wants/setvtrgb.service → /lib/systemd/system/setvtrgb.service.
+Setting up python3-distupgrade
+Setting up console-setup
+update-initramfs: deferring update (trigger activated)
+Setting up ubuntu-release-upgrader-core
+Setting up ubuntu-minimal
+Setting up update-manager-core
+Processing triggers for mime-support
+Processing triggers for install-info
+Processing triggers for libc-bin
+Processing triggers for systemd
+Processing triggers for man-db
+Processing triggers for initramfs-tools
+Processing triggers for ureadahead
+Processing triggers for rsyslog
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of try-restart.
+Processing triggers for dbus
