@@ -15,4 +15,14 @@ steps:
       repo: brandonkal/docker-polyglot
       context: './base'
       dockerfile: './base/Dockerfile'
-      tags: latest
+      tags: base
+  - name: build-lang
+    image: plugins/docker
+    settings:
+      username: brandonkal
+      password:
+        from_secret: docker_password
+      repo: brandonkal/docker-polyglot
+      context: './languages'
+      dockerfile: './languages/Dockerfile'
+      tags: lang
