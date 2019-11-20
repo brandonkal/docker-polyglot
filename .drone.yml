@@ -13,5 +13,6 @@ steps:
       password:
         from_secret: docker_password
       repo: brandonkal/docker-polyglot
-      context: ./base
+      context: './base'
+      dockerfile: './base/Dockerfile'
       tags: latest
