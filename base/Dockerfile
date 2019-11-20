@@ -1,6 +1,6 @@
 FROM buildpack-deps:bionic-curl
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y \
   git \
   openssh-client \
   procps \
@@ -13,12 +13,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   sudo \
   htop \
   man \
-  ripgrep \
   net-tools \
-  locales; \
+  locales && \
   rm -rf /var/lib/apt/lists/*
 
 RUN locale-gen en_US.UTF-8
 # We unfortunately cannot use update-locale because docker will not use the env variables
 # configured in /etc/default/locale so we need to set it manually.
-ENV LC_ALL=en_US.UTF-8
+ENV LC_ALL=en_US.UTF-8 \
+  LANGUAGE=en_US:en \
+  LANG=en_US.UTF-8
