@@ -3,6 +3,7 @@ FROM buildpack-deps:bionic-curl
 RUN set -ex; \
   apt-get update; \
   apt-get install -y --no-install-recommends \
+  ######## Docker community block begin ########
   autoconf \
   automake \
   bzip2 \
@@ -54,18 +55,80 @@ RUN set -ex; \
   fi \
   ) \
   ; \
-  rm -rf /var/lib/apt/lists/*
-
-RUN apt-get update && apt-get install -y \
+  ######## Docker community block end ########
+  ######## Begin Tools in Ubuntu Standard ########
+  gawk \
+  check bash version \
+  debianutils \
+  bash \
+  bsdutils \
+  coreutils \
+  whois \
+  dash \
+  tar \
+  diffutils \
+  findutils \
+  grep \
+  gzip \
+  hostname \
+  libpam-runtime \
+  debconf \
+  libpam-modules-bin \
+  ncurses-bin \
+  sed \
+  more \
+  less \
+  apt \
+  man-db \
+  perl \
+  sensible-utils \
+  mime-support \
+  readline-common \
+  groff-base \
+  lsof \
+  openssh-client \
+  wget \
+  autoconf \
+  automake \
+  autotools-dev \
+  gnupg \
+  inetutils-ping \
+  make-doc \
+  lsb-base \
+  time \
+  info \
+  install-info \
+  telnet \
+  ftp \
+  whiptail \
+  bash-completion \
+  dnsutils \
+  command-not-found \
+  cpio \
+  ed \
+  gettext \
+  info \
+  iproute2 \
+  iputils-ping \
+  iputils-tracepath \
+  irqbalance \
+  kmod \
+  lshw \
+  mtr-tiny \
+  netcat-openbsd \
+  psmisc \
+  rsync \
+  strace && \
+  ######## End   Tools in Ubuntu Standard ########
+  apt-get install -y \
   git \
   openssh-client \
   procps \
   vim \
   neovim \
-  curl \
   wget \
-  lsof \
-  inetutils-ping \
+  # Modified from inetutils-ping
+  ipututils-ping \
   sudo \
   htop \
   man \
