@@ -1,8 +1,8 @@
 FROM buildpack-deps:bionic-curl
 
 RUN set -ex; \
-  apt-get update; \
-  apt-get install -y --no-install-recommends \
+  apt update; \
+  DEBIAN_FRONTEND=noninteractive apt install -y --no-install-recommends \
   ######## Docker community block begin ########
   autoconf \
   automake \
@@ -109,7 +109,7 @@ RUN set -ex; \
   rsync \
   strace \
   ######## End Tools in Ubuntu Standard ########
-  && apt-get install -y \
+  && DEBIAN_FRONTEND=noninteractive apt install -y \
   git \
   openssh-client \
   procps \
