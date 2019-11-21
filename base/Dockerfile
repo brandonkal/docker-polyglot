@@ -143,7 +143,7 @@ RUN set -ex; \
   zip \
   ### End Netlify ###
   echo '===Installing misc tools==='; \
-  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y \
   git \
   openssh-client \
   procps \
@@ -156,7 +156,7 @@ RUN set -ex; \
   locales \
   #### Clean Up apt-cache ####
   echo '===Cleaning the apt-cache==='; \
-  && apt-get autoremove --purge -y && apt-get -y clean \
+  apt-get autoremove --purge -y && apt-get -y clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
   apt-get autoremove -y && \
   unset DEBIAN_FRONTEND
