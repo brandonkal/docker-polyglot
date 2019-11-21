@@ -126,9 +126,9 @@ RUN set -ex; \
   expect \
   git-lfs \
   jq \
+  yq \
   graphviz \
   jpegoptim \
-  libcurl3 \
   optipng \
   pngcrush \
   python3.8 \
