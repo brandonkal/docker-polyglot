@@ -83,12 +83,8 @@ RUN set -ex; \
   readline-common \
   groff-base \
   lsof \
-  openssh-client \
-  wget \
-  autoconf \
-  automake \
   autotools-dev \
-  gnupg \
+  gnupg2 \
   make-doc \
   lsb-base \
   time \
@@ -103,7 +99,6 @@ RUN set -ex; \
   cpio \
   ed \
   gettext \
-  info \
   iproute2 \
   irqbalance \
   kmod \
@@ -112,9 +107,9 @@ RUN set -ex; \
   netcat-openbsd \
   psmisc \
   rsync \
-  strace && \
-  ######## End   Tools in Ubuntu Standard ########
-  apt-get install -y \
+  strace \
+  ######## End Tools in Ubuntu Standard ########
+  && apt-get install -y \
   git \
   openssh-client \
   procps \
@@ -125,8 +120,38 @@ RUN set -ex; \
   htop \
   man \
   net-tools \
-  locales && \
-  rm -rf /var/lib/apt/lists/*
+  locales \
+  ####### From Netlify #######
+  advancecomp \
+  expect \
+  git-lfs \
+  jq \
+  graphviz \
+  jpegoptim \
+  libcurl3 \
+  optipng \
+  pngcrush \
+  python3.8 \
+  python3.8-dev \
+  ssh \
+  # PHP Install
+  php7.2 \
+  php7.2-xml \
+  php7.2-mbstring \
+  php7.2-gd \
+  php7.2-sqlite3 \
+  php7.2-curl \
+  php7.2-zip \
+  software-properties-common \
+  sqlite3 \
+  xvfb \
+  # END PHP
+  virtualenv \
+  tree \
+  zip \
+  ### End Netlify ###
+  && apt autoremove --purge -y && apt -y clean \
+  && rm -rf /var/lib/apt/lists/*
 
 RUN locale-gen en_US.UTF-8
 # We unfortunately cannot use update-locale because docker will not use the env variables
