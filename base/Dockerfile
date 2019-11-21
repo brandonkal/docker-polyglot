@@ -1,8 +1,14 @@
 FROM buildpack-deps:bionic-curl
 
+# Do not exclude man pages & other documentation
+# Reinstall all currently installed packages in order to get the man pages back
+RUN rm /etc/dpkg/dpkg.cfg.d/excludes && apt-get update && \
+  dpkg -l | grep ^ii | cut -d' ' -f3 | xargs apt-get install -y --reinstall && \
+  rm -r /var/lib/apt/lists/*
+
 RUN set -ex; \
-  apt update; \
-  DEBIAN_FRONTEND=noninteractive apt install -y --no-install-recommends \
+  apt-get update; \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
   ######## Docker community block begin ########
   autoconf \
   automake \
@@ -109,18 +115,6 @@ RUN set -ex; \
   rsync \
   strace \
   ######## End Tools in Ubuntu Standard ########
-  && DEBIAN_FRONTEND=noninteractive apt install -y \
-  git \
-  openssh-client \
-  procps \
-  vim \
-  neovim \
-  wget \
-  sudo \
-  htop \
-  man \
-  net-tools \
-  locales \
   ####### From Netlify #######
   advancecomp \
   expect \
@@ -149,8 +143,23 @@ RUN set -ex; \
   tree \
   zip \
   ### End Netlify ###
-  && apt autoremove --purge -y && apt -y clean \
-  && rm -rf /var/lib/apt/lists/*
+  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+  git \
+  openssh-client \
+  procps \
+  vim \
+  neovim \
+  wget \
+  sudo \
+  htop \
+  man \
+  net-tools \
+  locales \
+  #### Clean Up apt-cache ####
+  && apt-get autoremove --purge -y && apt-get -y clean \
+  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+  apt-get autoremove -y && \
+  unset DEBIAN_FRONTEND
 
 RUN locale-gen en_US.UTF-8
 # We unfortunately cannot use update-locale because docker will not use the env variables
