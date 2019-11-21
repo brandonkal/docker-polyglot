@@ -1,13 +1,13 @@
 FROM buildpack-deps:bionic-curl
 
-# Do not exclude man pages & other documentation
-# Reinstall all currently installed packages in order to get the man pages back
-RUN rm /etc/dpkg/dpkg.cfg.d/excludes && apt-get update && \
-  dpkg -l | grep ^ii | cut -d' ' -f3 | xargs apt-get install -y --reinstall && \
-  rm -r /var/lib/apt/lists/*
-
 RUN set -ex; \
+  # Do not exclude man pages & other documentation
+  # Reinstall all currently installed packages in order to get the man pages back
+  echo '===Enabling manual pages==='; \
+  rm /etc/dpkg/dpkg.cfg.d/excludes; \
   apt-get update; \
+  dpkg -l | grep ^ii | cut -d' ' -f3 | xargs apt-get install -y --reinstall && \
+  echo '===Installing Community Build Dependencies and configuring a minimal base install==='; \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
   ######## Docker community block begin ########
   autoconf \
@@ -90,7 +90,6 @@ RUN set -ex; \
   groff-base \
   lsof \
   autotools-dev \
-  gnupg2 \
   make-doc \
   lsb-base \
   time \
@@ -143,19 +142,20 @@ RUN set -ex; \
   tree \
   zip \
   ### End Netlify ###
+  echo '===Installing misc tools==='; \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y \
   git \
   openssh-client \
   procps \
   vim \
   neovim \
-  wget \
   sudo \
   htop \
   man \
   net-tools \
   locales \
   #### Clean Up apt-cache ####
+  echo '===Cleaning the apt-cache==='; \
   && apt-get autoremove --purge -y && apt-get -y clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
   apt-get autoremove -y && \
