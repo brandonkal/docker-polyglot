@@ -126,7 +126,6 @@ RUN set -ex; \
   expect \
   git-lfs \
   jq \
-  yq \
   graphviz \
   jpegoptim \
   optipng \
