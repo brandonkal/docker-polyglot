@@ -143,7 +143,7 @@ RUN set -ex; \
   wget -O get-pip.py "$PYTHON_GET_PIP_URL"; \
   echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; \
   \
-  python get-pip.py \
+  python3 get-pip.py \
   --disable-pip-version-check \
   --no-cache-dir \
   "pip==$PYTHON_PIP_VERSION" \
