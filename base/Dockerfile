@@ -140,7 +140,7 @@ RUN set -ex; \
   # END PHP
   virtualenv \
   tree \
-  zip \
+  zip; \
   ### End Netlify ###
   echo '===Installing misc tools==='; \
   DEBIAN_FRONTEND=noninteractive apt-get install -y \
@@ -153,7 +153,7 @@ RUN set -ex; \
   htop \
   man \
   net-tools \
-  locales \
+  locales; \
   #### Clean Up apt-cache ####
   echo '===Cleaning the apt-cache==='; \
   apt-get autoremove --purge -y && apt-get -y clean \
